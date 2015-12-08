@@ -1,0 +1,13 @@
+<h1><%= @character.name %></h1>
+<%= image_tag(@character.image, alt:'No image', width:200) %>
+<ul>
+  <li>
+    Age:  <%= @character.age %> years old
+  </li>
+  <li>
+    Height: <%= @character.height %> cm
+  </li>
+  <li>
+    Misc. info: <%= @character.misc_info %>
+  </li>
+</ul>

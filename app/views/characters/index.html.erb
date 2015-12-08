@@ -1,5 +1,6 @@
 <% @characters.each do |character| %>
   <%= character.name %> appeared in <%= character.game %><br>
+  <%= link_to("Show #{character.name}", character_path(character)) %><br>
 
 
 

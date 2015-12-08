@@ -12,7 +12,13 @@ class CharactersController < ApplicationController
     redirect_to( characters_path )
   end
 
+  def show
+    @character = Character.find(params[:id])
+  end
 
+  def edit
+    
+  end
 
 
 
