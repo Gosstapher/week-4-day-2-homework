@@ -17,13 +17,20 @@ class CharactersController < ApplicationController
   end
 
   def edit
-    
+    @character = Character.find(params[:id])
   end
 
+  def update
+    character = Character.find(params[:id])
+    character.update(character_params)
+    redirect_to( characters_path )
+  end
 
-
-
-
+  def destroy
+    character = Character.find(params[:id])
+    character.destroy
+    redirect_to( characters_path )
+  end
 
   private
   def character_params
