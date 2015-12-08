@@ -1,0 +1,21 @@
+<%= form_for @character do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<br>
+<%= f.label :game %>
+<%= f.text_field :game %>
+<br>
+<%= f.label :image %>
+<%= f.text_field :image %>
+<br>
+<%= f.label :age %>
+<%= f.number_field :age %>
+<br>
+<%= f.label :height %>
+<%= f.number_field :height %>
+<br>
+<%= f.label :misc_info %>
+<%= f.text_field :misc_info %>
+<br>
+<%=f.submit 'Create Character' %>
+<% end %>
